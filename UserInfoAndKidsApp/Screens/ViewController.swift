@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     let addKidButton        = Button()
     let deleteButton        = Button()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -38,7 +37,6 @@ class ViewController: UIViewController {
         configureDeleteButton()
         configureTableView()
         reloadTableView()
-        
     }
     
     func reloadTableView(){
@@ -192,6 +190,8 @@ class ViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Сбросить данные", style: .destructive , handler:{ (UIAlertAction)in
             PersistenceManager.sharedRealm.deleteAll()
+            userNameTextField = ""
+            userAgeTextField = ""
             self.reloadTable()
         }))
         
