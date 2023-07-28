@@ -154,10 +154,10 @@
 		62C7BAC0290D238300D6D4DE /* UserInfoAndKidsApp */ = {
 			isa = PBXGroup;
 			children = (
-				624EE327291824FA000878FE /* Extensions */,
-				624EE320291813FF000878FE /* Managers */,
 				62C7BAFC290D482A00D6D4DE /* Screens */,
 				62C7BAF1290D25A100D6D4DE /* CustomViews */,
+				624EE320291813FF000878FE /* Managers */,
+				624EE327291824FA000878FE /* Extensions */,
 				62C7BAFB290D480700D6D4DE /* SupportFiles */,
 				62C7BACF290D238500D6D4DE /* Info.plist */,
 			);
