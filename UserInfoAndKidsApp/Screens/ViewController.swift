@@ -190,8 +190,8 @@ class ViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Сбросить данные", style: .destructive , handler:{ (UIAlertAction)in
             PersistenceManager.sharedRealm.deleteAll()
-            userNameTextField = ""
-            userAgeTextField = ""
+            self.userNameTextField.text = ""
+            self.userAgeTextField.text = ""
             self.reloadTable()
         }))
         
